@@ -1,0 +1,6 @@
+apt update
+apt-get install kubeadm=1.25.0-00
+kubeadm upgrade apply v1.25.0
+apt-get install kubelet=1.25.0-00 
+systemctl daemon-reload
+systemctl restart kubelet
